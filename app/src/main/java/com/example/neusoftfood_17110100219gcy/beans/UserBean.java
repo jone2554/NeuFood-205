@@ -1,6 +1,6 @@
 package com.example.neusoftfood_17110100219gcy.beans;
 
-public class UserInfo {
+public class UserBean {
     /**
      * user_id : 1
      * username : lnn
@@ -10,15 +10,15 @@ public class UserInfo {
      * comment : 测试
      */
 
-    private String user_id;
+    private String userid;
     private String username;
     private String userpass;
     private String mobilenum;
     private String address;
     private String comment;
 
-    public void setUser_id(String user_id) {
-        this.user_id = user_id;
+    public void setUser_id(String userid) {
+        this.userid = userid;
     }
 
     public void setUsername(String username) {
@@ -42,7 +42,7 @@ public class UserInfo {
     }
 
     public String getUser_id() {
-        return user_id;
+        return userid;
     }
 
     public String getUsername() {

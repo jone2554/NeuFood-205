@@ -1,8 +1,9 @@
 package com.example.neusoftfood_17110100219gcy.service;
 
 
-import com.example.neusoftfood_17110100219gcy.beans.LoginBean;
 import com.example.neusoftfood_17110100219gcy.beans.Result;
+import com.example.neusoftfood_17110100219gcy.beans.UserBean;
+import com.example.neusoftfood_17110100219gcy.beans.UserInfo;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -10,7 +11,7 @@ import retrofit2.http.Query;
 
 public interface UserService {
         @GET("userLogin.do")
-        Call<LoginBean> login(
+        Call<UserBean> login(
                 @Query("username") String username,
                 @Query("userpass") String userpass
         );
